@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Competition:
+  = @entry.competition_id
+%p
+  %b Name:
+  = @entry.name
+%p
+  %b Description:
+  = @entry.description
+
+= link_to 'Edit', edit_entry_path(@entry)
+\|
+= link_to 'Back', entries_path
